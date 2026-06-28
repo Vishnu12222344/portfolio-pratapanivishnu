@@ -38,7 +38,7 @@ const PROJECTS = [
     solution: "Designed an arrival-time-aware SJF scheduler with JWT-secured REST APIs and a TypeScript dashboard surfacing live metrics.",
     features: ["JWT auth + RBAC", "SJF vs FIFO simulator", "3 parallel barista pipelines", "200–250 orders / run", "Recharts analytics", "SLA + revenue dashboards"],
     metrics: [{ k: "30%", v: "lower avg wait" }, { k: "50%", v: "less abandonment" }, { k: "250", v: "orders / run" }],
-    github: "https://github.com/Vishnu12222344",
+    github: "https://github.com/Vishnu12222344/CoffeeShopApplication",
   },
   {
     title: "IndiChess — Real-Time Chess",
@@ -52,7 +52,7 @@ const PROJECTS = [
     solution: "Built a stateless Spring Boot engine with WebSocket sessions, containerized on K8s, with MySQL-backed transactional move history.",
     features: ["WebSocket move sync", "10+ concurrent matches", "Strict server-side validation", "K8s multi-app cluster", "Persistent player stats", "Fault-tolerant recovery"],
     metrics: [{ k: "10+", v: "concurrent matches" }, { k: "100+", v: "stored sessions" }, { k: "3+", v: "apps / cluster" }],
-    github: "https://github.com/Vishnu12222344",
+    github: "https://github.com/Vishnu12222344/IndiChess-MicroServices",
   },
   {
     title: "E-Commerce Platform",
@@ -66,7 +66,7 @@ const PROJECTS = [
     solution: "Enforced RBAC via Spring Security with isolated REST surfaces per role and a Docker-packaged deployment.",
     features: ["3-role RBAC", "Product + image upload", "Category filtering", "Wishlist", "Real-time stock validation", "Containerized rollout"],
     metrics: [{ k: "3", v: "user roles" }, { k: "6+", v: "core features" }, { k: "50%", v: "fewer deploy steps" }],
-    github: "https://github.com/Vishnu12222344",
+    github: "https://github.com/Vishnu12222344/E-commerce",
   },
 ];
 
