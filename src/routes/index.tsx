@@ -603,9 +603,15 @@ function ProjectCard({ p, onOpen, index }: { p: typeof PROJECTS[number]; onOpen:
               <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full glass px-5 py-2.5 text-sm hover:bg-white/10">
                 <Github className="size-4" /> Code
               </a>
-              <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full glass px-5 py-2.5 text-sm hover:bg-white/10">
-                <ExternalLink className="size-4" /> Live
-              </a>
+              <a
+  href="https://coffeeshopapplication-frontend.onrender.com"
+  target="_blank"
+  rel="noreferrer"
+  className="inline-flex items-center gap-2 rounded-full glass px-5 py-2.5 text-sm hover:bg-white/10"
+>
+  <ExternalLink className="size-4" />
+  Live
+</a>
             </div>
           </div>
 
