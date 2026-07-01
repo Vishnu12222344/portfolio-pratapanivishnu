@@ -38,7 +38,8 @@ const PROJECTS = [
     solution: "Designed an arrival-time-aware SJF scheduler with JWT-secured REST APIs and a TypeScript dashboard surfacing live metrics.",
     features: ["JWT auth + RBAC", "SJF vs FIFO simulator", "3 parallel barista pipelines", "200–250 orders / run", "Recharts analytics", "SLA + revenue dashboards"],
     metrics: [{ k: "30%", v: "lower avg wait" }, { k: "50%", v: "less abandonment" }, { k: "250", v: "orders / run" }],
-    github: "https://github.com/Vishnu12222344/CoffeeShopApplication",
+    github: "https://github.com/Vishnu12222344",
+    live: "https://coffeeshopapplication-frontend.onrender.com",
   },
   {
     title: "IndiChess — Real-Time Chess",
@@ -52,7 +53,8 @@ const PROJECTS = [
     solution: "Built a stateless Spring Boot engine with WebSocket sessions, containerized on K8s, with MySQL-backed transactional move history.",
     features: ["WebSocket move sync", "10+ concurrent matches", "Strict server-side validation", "K8s multi-app cluster", "Persistent player stats", "Fault-tolerant recovery"],
     metrics: [{ k: "10+", v: "concurrent matches" }, { k: "100+", v: "stored sessions" }, { k: "3+", v: "apps / cluster" }],
-    github: "https://github.com/Vishnu12222344/IndiChess-MicroServices",
+    github: "https://github.com/Vishnu12222344",
+    live: "https://indichessfrontend.onrender.com",
   },
   {
     title: "E-Commerce Platform",
@@ -66,7 +68,8 @@ const PROJECTS = [
     solution: "Enforced RBAC via Spring Security with isolated REST surfaces per role and a Docker-packaged deployment.",
     features: ["3-role RBAC", "Product + image upload", "Category filtering", "Wishlist", "Real-time stock validation", "Containerized rollout"],
     metrics: [{ k: "3", v: "user roles" }, { k: "6+", v: "core features" }, { k: "50%", v: "fewer deploy steps" }],
-    github: "https://github.com/Vishnu12222344/E-commerce",
+    github: "https://github.com/Vishnu12222344",
+    live: "https://e-commerce-jc55.onrender.com",
   },
 ];
 
@@ -600,18 +603,12 @@ function ProjectCard({ p, onOpen, index }: { p: typeof PROJECTS[number]; onOpen:
               <button onClick={onOpen} className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black hover:bg-white/90">
                 Case study <ArrowUpRight className="size-4" />
               </button>
+              <a href={p.live} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full glass px-5 py-2.5 text-sm hover:bg-white/10">
+                <ExternalLink className="size-4" /> Live
+              </a>
               <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full glass px-5 py-2.5 text-sm hover:bg-white/10">
                 <Github className="size-4" /> Code
               </a>
-              <a
-              href="https://coffeeshopapplication-frontend.onrender.com"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full glass px-5 py-2.5 text-sm hover:bg-white/10"
->
-  <ExternalLink className="size-4" />
-  Live
-</a>
             </div>
           </div>
 
@@ -712,7 +709,10 @@ function ProjectModal({ p, onClose }: { p: typeof PROJECTS[number] | null; onClo
             </div>
 
             <div className="mt-8 flex gap-3">
-              <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black">
+              <a href={p.live} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black">
+                <ExternalLink className="size-4" /> Live demo
+              </a>
+              <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full glass px-5 py-2.5 text-sm hover:bg-white/10">
                 <Github className="size-4" /> View code
               </a>
             </div>
